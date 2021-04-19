@@ -1,10 +1,26 @@
-// THIS IS A MODULE!
+// THIS IS A MODULE
 
-export const helloWorld: string = "Hello world";
+export function alertMe(): void {
+  alert("ATTENTION PLEASE");
+}
 
-export class Beispiel extends HTMLElement {
-  constructor() {
-    super();
-    this.innerHTML = "<h1>Hello World</h1>";
-  }
+export function computerSet(){
+  console.log("asdasd3454")
+}
+export class Feld
+{
+  static innerHTML: any;
+  constructor(private container: HTMLImageElement){}
+   h(heading: string)
+{
+ 
+ /* function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}*/
+  
+  ;
+
+
+
+}
 }
