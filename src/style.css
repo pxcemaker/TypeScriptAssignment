@@ -1,8 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 .wrapper {
 	max-width: 1000px;
 	width: 100%;
 	padding: 100px;
-	margin: 100px;
+
+    
+}
+body
+{
+    font-family: 'Cabin Sketch', cursive;
 }
 .wrapper:after {
 	content: "";
