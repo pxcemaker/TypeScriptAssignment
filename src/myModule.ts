@@ -1,7 +1,8 @@
 // THIS IS A MODULE
 
 import { } from "./index";
-import { validateWinHuman, validateWinPC } from "./myOtherModule";
+import { drawOrWin, validateWinHuman, validateWinPC } from "./myOtherModule";
+import { howMuchWinsHuman, zeitSchleife } from "./unusedModule";
 let enemyChoice:number;
 const felder =[1,2,3,4,5,6,7,8,9]
 export var checkVar1:boolean;
@@ -53,6 +54,7 @@ export function alertMe(): void {
 
 export function computerSet(){
   console.log("computer setzt")
+  zeitSchleife();
   enemyChoice=felder[getRandomInt(1,9)]
   console.log(enemyChoice)
   let i:number;
@@ -146,7 +148,7 @@ export function computerSet(){
     else if(((feld1&&feld2&&feld3&&feld4&&feld5&&feld6&&feld7&&feld8&&feld9)||(checkVar1&&checkVar2&&checkVar3&&
       checkVar4&&checkVar5&&checkVar6&&checkVar7&&checkVar8&&checkVar9))===true){
      
-      alert("DRAW")
+      drawOrWin();
     }
     else if(feldnr1 ===enemyChoice || feldnr3=== enemyChoice || feldnr2 === enemyChoice){
       console.log("der comp hat die versucht ins gegnerfeld zu setzen")
@@ -196,9 +198,7 @@ export function init(){
   checkVar8=false;
   checkVar9=false;
   
-
-
-  alertMe();
+  howMuchWinsHuman()
 }
 
 export function put1() {
@@ -351,7 +351,5 @@ export function put1() {
   
      } 
    }
-
-
 
 

@@ -1,7 +1,7 @@
 //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
 
 import { computerSet, getRandomInt, init, put1, put2, put3, put4, put5, put6, put7, put8, put9 } from "./myModule";
-import { alertMe, } from "./myOtherModule";
+
 
 document.querySelector("#test") ?.addEventListener("click", put1);
 document.querySelector("#test2") ?.addEventListener("click", put2);
