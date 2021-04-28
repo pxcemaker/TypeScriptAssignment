@@ -17,6 +17,10 @@ body
 	display: block;
 	visibility: hidden;
 }
+
+.animation{
+    color: brown;
+}
 h1 ,h2
 
 {
