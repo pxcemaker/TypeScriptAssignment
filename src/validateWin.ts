@@ -1,7 +1,7 @@
 // THIS IS A MODULE
 
-import { feld1, feld2, feld3, feld4, feld5, feld6, feld7, feld8, feld9, checkVar1, checkVar2, checkVar3, checkVar4, checkVar5, checkVar6, checkVar7, checkVar8, checkVar9, enemySet1, enemySet2, enemySet3, enemySet4, enemySet5, enemySet6, enemySet7, enemySet8, enemySet9 } from "./myModule";
-import { animateFelder, winsHuman } from "./unusedModule";
+import { feld1, feld2, feld3, feld4, feld5, feld6, feld7, feld8, feld9, checkVar1, checkVar2, checkVar3, checkVar4, checkVar5, checkVar6, checkVar7, checkVar8, checkVar9, enemySet1, enemySet2, enemySet3, enemySet4, enemySet5, enemySet6, enemySet7, enemySet8, enemySet9 } from "./set"
+import { resetAll } from "./reset";
 export let setWin:boolean;
 export function drawOrWin(): void {
   if(setWin===true)
@@ -20,34 +20,36 @@ export function validateWinHuman() //Hier wird geprüft ob der Mensch gewonnen h
    case (checkVar1&&checkVar2&&checkVar3)===true:
    alert("you won mit feld1+2+3")
     setWin= true;
- 
-    animateFelder()
+    resetAll()
    break;
 
 
    case (checkVar4&&checkVar5&&checkVar6)===true:
     alert("you won mit feld1+4+7")
     setWin= true;
-    animateFelder()
     break;
 
     case ( checkVar7&&checkVar8&&checkVar9)===true:
     alert("you won mit feld1+4+7")
     setWin= true;
+
     break;
 //senkrechte wins
    case (checkVar1&&checkVar4&&checkVar7)===true:
     alert("you won mit feld1+4+7")
     setWin= true;
+  
     break;
 
     case (checkVar2&&checkVar5&&checkVar8)===true:
       alert("you won mit feld1+4+7")
       setWin= true;
+     
       break;
 
       case (checkVar3&&checkVar6&&checkVar9)===true:
       alert("you won mit feld1+4+7")
+
       setWin= true;
       break;
 //diagonale wins
