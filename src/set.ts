@@ -60,13 +60,12 @@ export let app7 = document.getElementById("xRo7") as HTMLParagraphElement;
 export let app8 = document.getElementById("xRo8") as HTMLParagraphElement;
 export let app9 = document.getElementById("xRo9") as HTMLParagraphElement;
 
-//kopiert
-
+//kopiert von https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 export function getRandomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-export function init() {
+//ende
+export function init():void {
   feld1 = false;
   feld2 = false;
   feld3 = false;
@@ -109,7 +108,6 @@ export function init() {
 
 export function put1(): void {
   console.log("setze in feld 1 ein X");
-  console.log(checkVar1);
   if (feld1 === false && checkVar1 === false) {
     checkVar1 = true;
     feldnr1 = 1;
@@ -146,7 +144,6 @@ export function put3(): void {
 }
 
 export function put4(): void {
-  console.log("es cuadasd");
   if (feld4 === false && checkVar4 === false) {
     feldnr4 = 4;
     checkVar4 = true;
@@ -158,7 +155,6 @@ export function put4(): void {
   }
 }
 export function put5(): void {
-  console.log("es cuadasd");
   if (feld5 === false && checkVar5 === false) {
     checkVar5 = true;
     feldnr5 = 5;
@@ -182,7 +178,6 @@ export function put6(): void {
   }
 }
 export function put7(): void {
-  console.log("es cuadasd");
   if (feld7 === false && checkVar7 === false) {
     feldnr7 = 7;
     checkVar7 = true;
@@ -207,7 +202,6 @@ export function put8(): void {
   }
 }
 export function put9(): void {
-  console.log("es cuadasd");
   if (feld9 === false && checkVar9 === false) {
     feldnr9 = 9;
     checkVar9 = true;
@@ -323,7 +317,7 @@ export function computerSet(): void {
   }
 }
 
-function checkIfRow() {
+function checkIfRow():void {
   enemyChoice = felder[getRandomInt(0, 1)];
   console.log(enemyChoice + " hier hat er 1 oder 2 gewürfelt");
 

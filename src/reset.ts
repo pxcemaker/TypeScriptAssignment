@@ -51,7 +51,7 @@ export function setHumanWin(){
   
 }*/
 
-export function resetAll() {
+export function resetAll():void {
   init();
   app1.innerHTML = "";
   app2.innerHTML = "";
@@ -89,15 +89,15 @@ export function stopSet() {
 }
 
 //funktion kopiert von https://www.w3schools.com/js/js_timing.asp
-export function alertHumanWin() {
+export function alertHumanWin():void {
   alert("You won");
   drawOrWin();
 }
 
-export function alertTocRoboWin() {
+export function alertTocRoboWin():void {
   alert("TocRobo won");
   drawOrWin();
 }
-export function alertToReset() {
+export function alertToReset():void {
   alert("Please reset your game with the reset Button");
 }

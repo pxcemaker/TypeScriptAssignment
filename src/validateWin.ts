@@ -45,7 +45,7 @@ export function drawOrWin(): void {
     setTimeout(alertToReset, 100);
   }
 }
-export function validateWinHuman() {
+export function validateWinHuman():void {
   //Hier wird geprüft ob der Mensch gewonnen hat
   switch (
     feld1 ||
@@ -101,7 +101,7 @@ export function validateWinHuman() {
   }
 }
 
-export function validateWinPC() {
+export function validateWinPC():void {
   //Hier wird geprüft ob der Mensch gewonnen hat
   switch (
     enemySet1 ||
